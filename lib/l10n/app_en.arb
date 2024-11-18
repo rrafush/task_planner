@@ -1,0 +1,30 @@
+{
+    "emptyStateMessage": "You have no tasks yet! Create one!",
+    "@emptyStateMessage": {
+      "description": "The message to be shown when there are no tasks"
+    },
+    "errorMessage": "Oops! Something went wrong!",
+    "@errorMessage": {
+      "description": "The message to be shown when there are no tasks"
+    },
+    "title": "Title",
+    "@title": {
+      "description": "generic title label"
+    },
+    "description": "Description",
+    "@description": {
+      "description": "generic description label"
+    },
+    "titleRequired": "Please, enter a title",
+    "@titleRequired": {
+      "description": "error label when title is empty"
+    },
+    "dateNotValid": "Choose a date that is not in the past",
+    "@dateNotValid": {
+      "description": "error label when title is empty"
+    },
+    "save": "Save",
+    "@save": {
+      "description": "generic save button label"
+    }
+}

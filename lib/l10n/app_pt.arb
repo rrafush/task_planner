@@ -1,0 +1,9 @@
+{
+    "emptyStateMessage": "Você ainda não tem tarefas! Crie uma!",
+    "errorMessage": "Oops! Algo deu errado!",
+    "title": "Título",
+    "description": "Descrição",
+    "titleRequired": "Por favor, insira um título",
+    "dateNotValid": "Escolha uma data que não está no passado",
+    "save": "Salvar"
+}
