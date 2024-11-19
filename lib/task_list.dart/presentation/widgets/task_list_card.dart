@@ -45,7 +45,9 @@ class TaskListCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ConstrainedBox(
-                constraints: BoxConstraints(maxWidth: width * 0.5),
+                constraints: BoxConstraints(
+                  maxWidth: width * 0.4,
+                ),
                 child: Text(
                   title.toUpperCase(),
                   maxLines: 1,
@@ -59,7 +61,7 @@ class TaskListCard extends StatelessWidget {
                 height: Dimensions.md,
               ),
               ConstrainedBox(
-                constraints: BoxConstraints(maxWidth: width * 0.5),
+                constraints: BoxConstraints(maxWidth: width * 0.45),
                 child: Text(
                   description,
                   maxLines: 3,
