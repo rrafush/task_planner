@@ -17,25 +17,26 @@ import 'package:simple_to_do_app/task_list.dart/presentation/bloc/task_bloc.dart
 import 'package:simple_to_do_app/task_list.dart/presentation/task_list_screen.dart';
 
 Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  runZonedGuarded(() async {
+    WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  FlutterError.onError = (err) {
-    FirebaseCrashlytics.instance.recordFlutterError(err);
-  };
-  PlatformDispatcher.instance.onError = (error, stack) {
-    FirebaseCrashlytics.instance.recordError(error, stack);
-    return true;
-  };
+    await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
+    PlatformDispatcher.instance.onError = (error, stack) {
+      FirebaseCrashlytics.instance.recordError(error, stack);
+      return true;
+    };
 
-  await setupLocator();
+    await setupLocator();
 
-  tz.initializeTimeZones();
-  locator<NotificationService>().init();
+    tz.initializeTimeZones();
+    locator<NotificationService>().init();
 
-  runApp(const MyApp());
+    runApp(const MyApp());
+  }, (error, stackTrace) {
+    FirebaseCrashlytics.instance.recordError(error, stackTrace);
+  });
 }
 
 class MyApp extends StatelessWidget {

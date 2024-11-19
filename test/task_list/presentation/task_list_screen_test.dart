@@ -6,8 +6,7 @@ import 'package:simple_to_do_app/task_list.dart/presentation/task_list_screen.da
 import 'package:simple_to_do_app/task_list.dart/presentation/widgets/create_or_edit_task_bottom_sheet.dart';
 import 'package:simple_to_do_app/task_list.dart/presentation/widgets/task_list_card.dart';
 
-import '../../task_list/presentation/bloc/task_bloc_mock.dart'
-    as task_bloc_mock;
+import 'bloc/task_bloc_mock.dart' as task_bloc_mock;
 import '../../test_utils/app_wrapper.dart';
 
 extension _WidgetTester on WidgetTester {
