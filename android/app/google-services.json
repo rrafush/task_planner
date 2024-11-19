@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:745289852436:android:b6dad5bdff4e0b3f8fe901",
         "android_client_info": {
-          "package_name": "com.taskapp.app"
+          "package_name": "com.example.simple_to_do_app"
         }
       },
       "oauth_client": [],
