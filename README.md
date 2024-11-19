@@ -2,6 +2,10 @@
 
 A simple, intuitive **To-Do** application built with Flutter, following **Clean Architecture** principles and designed to help developers learn and practice best coding standards. This project serves as a resource for exploring architectural patterns, efficient state management, and Flutter development best practices.  
 
+## 🎥 Demo  
+
+<img src="https://github.com/user-attachments/assets/9d207452-13d0-4a95-a79d-bcefb09c1d19" />
+
 ---
 
 ## ✨ Features  
@@ -75,14 +79,7 @@ This project was designed as a learning sandbox, focusing on:
 - Exploring essential tools for modern app development.  
 - Adding internationalization support for a global audience.  
 
----
 
-## 🎥 Demo  
-
-<video src="https://github.com/user-attachments/assets/581cc498-ed24-4609-8e32-ef6d85331f05" />
-
-
----
 
 ## 🚀 How to Run the Project  
 
