@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:simple_to_do_app/l10n/app_localizations.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
 import 'package:simple_to_do_app/shared/theme/dimensions.dart';
@@ -138,20 +138,23 @@ class TaskListScreenState extends State<TaskListScreen> {
                     duration: const Duration(milliseconds: 500),
                     curve: Curves.easeInCubic,
                     opacity: state.tasks.isEmpty ? 1 : 0,
-                    child: Column(
-                      key: const Key('EmptyState'),
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Lottie.asset(
-                          'assets/empty_state.json',
-                          height: 400,
-                        ),
-                        Text(
-                          AppLocalizations.of(context)!.emptyStateMessage,
-                          textAlign: TextAlign.center,
-                        ),
-                      ],
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: Column(
+                        key: const Key('EmptyState'),
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Lottie.asset(
+                            'assets/empty_state.json',
+                            height: 400,
+                          ),
+                          Text(
+                            AppLocalizations.of(context)!.emptyStateMessage,
+                            textAlign: TextAlign.center,
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

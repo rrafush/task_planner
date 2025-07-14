@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:simple_to_do_app/l10n/app_localizations.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_to_do_app/shared/theme/dimensions.dart';
 import 'package:simple_to_do_app/shared/ui/date_time_picker.dart';
